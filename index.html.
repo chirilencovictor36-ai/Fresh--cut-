@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cut — Frizerie</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            background:
+                linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)),
+                url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+        }
+
+        header h1 {
+            font-size: 64px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .buton {
+            display: inline-block;
+            background: #d4af37;
+            color: #111;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 70px 20px;
+            text-align: center;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .servicii {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .serviciu {
+            background: #222;
+            padding: 30px 20px;
+            border-radius: 12px;
+        }
+
+        .serviciu h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .pret {
+            color: #d4af37;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .galerie {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .galerie img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .program {
+            background: #222;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        footer {
+            background: #080808;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 44px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>✂️ Fresh Cut</h1>
+        <p>Stilul tău. Tunsoarea ta.</p>
+
+        <a class="buton" href="https://wa.me/373XXXXXXXX" target="_blank">
+            Programează-te 📱
+        </a>
+    </div>
+</header>
+
+<section>
+    <h2>Serviciile noastre</h2>
+
+    <div class="servicii">
+
+        <div class="serviciu">
+            <h3>Tuns</h3>
+            <p>Tunsoare modernă pentru bărbați</p>
+            <p class="pret">100 lei</p>
+        </div>
+
+        <div class="serviciu">
+            <h3>Tuns + Barbă</h3>
+            <p>Tuns și aranjat barba</p>
+            <p class="pret">150 lei</p>
+        </div>
+
+        <div class="serviciu">
+            <h3>Aranjat Barbă</h3>
+            <p>Contur și îngrijire</p>
+            <p class="pret">70 lei</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Lucrările noastre 🔥</h2>
+
+    <div class="galerie">
+
+        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80"
+             alt="Tunsoare">
+
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0d8f0c7d?auto=format&fit=crop&w=800&q=80"
+             alt="Frizerie">
+
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80"
+             alt="Tunsoare modernă">
+
+    </div>
+</section>
+
+<section>
+    <h2>Despre noi</h2>
+
+    <p>
+        La Fresh Cut combinăm stilul modern cu atenția la detalii.
+        Vino pentru o tunsoare, o barbă îngrijită și o experiență relaxantă.
+    </p>
+</section>
+
+<section>
+    <h2>Program 🕐</h2>
+
+    <div class="program">
+        <p>Luni – Sâmbătă: 09:00 – 19:00</p>
+        <p>Duminică: Închis</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Fresh Cut — Toate drepturile rezervate.</p>
+</footer>
+
+</body>
+</html>
